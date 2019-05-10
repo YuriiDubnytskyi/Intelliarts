@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <meta charset="UTF-8">
+    <title>App</title>
+    <style type="text/css">
+
+        body{
+            background:#486596;
+            display: flex;
+        }
+        section{
+            margin: 20px;
+            padding: 20px;
+
+        }
+        .text{
+            color:white;
+        }
+        a{
+            text-decoration: none;
+        }
+
+    </style>
+</head>
+<body>
+
+<section>
+    <p class="text">Введіть команду</p>
+    <p><textarea rows="5" cols="35" id="numb"></textarea>
+    <p><input type="submit" value="Команда" id="command" onclick="start()"></p>
+</section>
+<section>
+    <p class="text">Вивід інформації</p>
+    <p><textarea rows="10" cols="45" id="arrA"></textarea></p>
+</section>
+
+<script src="app.js"></script>
+<script src="general.js"></script>
+
+</body>
+</html>
